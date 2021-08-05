@@ -1,0 +1,35 @@
+.control i {
+    position: absolute;
+    bottom: 20%;
+    transition: all 0.5s linear;
+    width: 33%;
+    z-index: 10;
+}
+
+#id2 {
+    left: 0%;
+    font-size: 65%;
+    color: none;
+    text-shadow: none;
+}
+
+#id1 {
+    left: 66.67%;
+    font-size: 65%;
+    color: none;
+    text-shadow: none;
+}
+
+#id0 {
+    left: 33.33%;
+    bottom: 12.5%;
+    color: whitesmoke;
+    text-shadow: 0 0 0.33vw lightseagreen;
+    z-index: -1;
+}
+
+#id1:hover, #id2:hover {
+    color: rgba(245,245,245,0.5);
+    cursor: pointer;
+}
+

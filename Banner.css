@@ -1,0 +1,207 @@
+.banner {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: normal;
+  text-align: left;
+  background:  none;
+  color: whitesmoke;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-shadow: 0 0 0.33vw lightseagreen;
+  overflow: hidden;
+}
+
+.h2 {
+  font-size: 3.5vw;
+  text-align: left;
+  margin-bottom: 0.5em;
+  margin-left: 30vw;
+  margin-top: 10vh;
+}
+
+.h3 {
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left: calc(30vw + 0.125em);
+}
+
+.dots {
+  text-shadow: none;
+  margin-left: 22vw;
+  font-size: 2.5vw;
+  letter-spacing: 0;
+  display: inline-block;
+  opacity: 1;
+  animation-duration: 10s;
+  animation-name: dots;
+  animation-iteration-count: infinite;
+  animation-delay: 6.95s;
+  animation-timing-function: cubic-bezier(0.5, 4.5, 3.0, 2.0);
+  opacity: 0;
+}
+
+.dots1 { color: whitesmoke; }
+.dots2 { color: whitesmoke;  }
+
+.banner .filler {
+  opacity: 0;
+  font-size: 2.5vw;
+}
+
+.skills {
+  font-size: 1.5vw;
+  letter-spacing: 0;
+  display: inline-block;
+  opacity: 1;
+  animation-duration: 10s;
+  animation-name: skills2;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  animation-timing-function: cubic-bezier(2.0, 5.0, 2.0, 1.0);
+  
+}
+
+.skills span {
+  font-size: 1.5vw;
+  transition-property: transform, opacity;
+  transition-duration: 2s, 2.5s;
+  display: inline-block;
+  transform: translate(0vw, 0vw);
+  animation-timing-function: cubic-bezier(2.0, 3.0, 3.0, 2.0);
+}
+
+.banner i {
+  color:whitesmoke;
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  opacity: 0.75;
+  animation-duration: 7.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: .25vw;
+  animation-delay: 1s;
+}
+
+#roid-1 {
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-name: roid1;
+  animation-delay: 5.85s;
+  font-size: 2vw;
+  z-index: 2;
+  color: whitesmoke;
+  text-shadow: 0 0 0.33vw lightseagreen;
+}
+
+@keyframes roid1 {
+  from, to { transform: translate(0vw, 10vh); font-size: 0.25vw}
+  12% { opacity: 1; font-size: 0.75vw;}
+  12.1% { opacity: 0 }
+  27% { transform: translate(-85vw, 120vh); opacity: 0; }
+  100% {opacity: 0}
+}
+
+@keyframes skills2 {
+  from, to { transform: translate(0, 0); opacity: 1}
+  1% {opacity: 0; }
+  30% { transform: translate(-15vw, 15vh); opacity: 0; font-size: 0.75em; text-shadow: none;}
+  32% { transform: translate(0vw, 0vw); opacity: 0; letter-spacing: 0; font-size: 1.5vw }
+  48% { opacity: 0.5; text-shadow: none;}
+  51% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen;}
+  54% { opacity: 0.5; text-shadow: none;}
+  55% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen;}
+  56% { opacity: 0.5; text-shadow: none;}
+  57% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+  58% { opacity: 0.5; text-shadow: none;}
+  59% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+  60% { opacity: 0.5; text-shadow: none;}
+  63% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+}
+
+@keyframes dots {
+  from, to { transform: translate(7vw, -13vh); opacity: 0; }
+  1% { opacity: 1; }
+  32.5% { transform: translate(-17vw, 45vh); opacity: 1; letter-spacing: 2vw; font-size: 1em; }
+  33% { opacity: 0 }
+}
+
+.caret {
+  animation-name: blink-caret;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
+
+@keyframes blink-caret {
+  from, to { color: transparent; text-shadow: none }
+  50% {color: whitesmoke; text-shadow: 1px 1px 8px rgba(165,217,213);}
+}
+
+/** Mobile Rendering **/
+
+.h2S {
+  margin: 0 0 0 15vw;
+  font-size: 6.5vw;
+  position: absolute;
+  top: 27.5vh;
+}
+
+.h3S {
+  font-size: 2.8vw;
+  margin-left: 15vw;
+  position: absolute;
+  top: 35vh;
+  height: 50vh;
+}
+
+.dotsS {
+ display: block;
+ margin-left: 47.5vw;
+ transform: translateY(25vh)
+}
+
+#roid-1S {
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-name: roid1S;
+  animation-delay: 5.85s;
+  font-size: 2vw;
+  z-index: 2;
+  color: whitesmoke;
+  text-shadow: 0 0 0.33vw lightseagreen;
+}
+
+@keyframes roid1S {
+  from, to { transform: translate(15vw, 10vh); font-size: 0.25vw}
+  11% { opacity: 1; font-size: 0.75vw;}
+  11.1% { opacity: 0 }
+  25% { transform: translate(-90vw, 100vh); opacity: 0; }
+  100% {opacity: 0}
+}
+
+.skillsS {
+  font-size: 2.8vw;
+  animation-name: skills3;
+}
+
+@keyframes skills3 {
+  from, to { transform: translate(0, 0); opacity: 1}
+  1% {opacity: 0; }
+  30% { transform: translate(-15vw, 15vh); opacity: 0; font-size: 0.75em; text-shadow: none;}
+  32% { transform: translate(0vw, 0vw); opacity: 0; letter-spacing: 0; font-size: 2.6vw }
+  48% { opacity: 0.5; text-shadow: none;}
+  51% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen;}
+  54% { opacity: 0.5; text-shadow: none;}
+  55% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen;}
+  56% { opacity: 0.5; text-shadow: none;}
+  57% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+  58% { opacity: 0.5; text-shadow: none;}
+  59% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+  60% { opacity: 0.5; text-shadow: none;}
+  63% { opacity: 1; text-shadow: 0 0 0.33vw lightseagreen; }
+}
+

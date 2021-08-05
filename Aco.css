@@ -1,0 +1,80 @@
+.aco {
+    margin-top: 2em;
+}
+
+.controls {
+    display: flex;
+    border: 1px solid rgba(68,68,68,0.5);
+    padding: 1em;
+}
+.controls p {
+    margin-bottom: 0.75em;
+}
+.aco button {
+    text-align: left;
+    margin-top: 1em;
+    border: 2px solid rgba(68,68,68);
+    color: #444;
+    font-size: 1em;
+}
+
+.city {
+    display: flex;
+    margin-bottom: 0.75em;
+}
+.city div {
+    display: flex;
+}
+.city div input {
+    width: 2em;
+}
+.city div label {
+    margin-left: 1em;
+}
+
+.iteratives {
+    display: flex;
+    margin-top: 2em;
+    width: 35em;
+    margin-left: 3em;
+}
+.iteratives div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#labelsWrap div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.75em;
+}
+#labelsWrap div input {
+    width: 2em;
+}
+#numRds {
+    margin-right: 4.5em;
+}
+#numAnts {
+    margin-right: 1.0625em;
+}
+
+
+#addButton {
+    margin-left: 0.85em;
+    font-size: 1em;
+    border: none;
+}
+
+#addButton:hover {
+    cursor: pointer;
+}
+
+#submit:hover {
+    border-color: #222;
+    color: #222;
+}
+
+#map {
+    background: black;
+    margin-top: 1em;
+}

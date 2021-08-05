@@ -1,0 +1,134 @@
+.venn-diagram {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:none;
+    padding: 15vh 0 5vh 0;
+}
+
+.diagram {
+    padding-top: 0.125em;
+    font-size: calc(6vw + 1em);
+    height: 23.5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.venn-label {
+    position: absolute;
+    font-weight: bold;
+    color:whitesmoke;
+    font-weight: normal;
+    font-size: 0.125em;
+}
+.left {
+    left: 22%;
+    top: 50%;
+}
+.right {
+    right: 22%;
+    top: 50%;
+}
+
+.venn-img {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    position: absolute;
+    transition: opacity 1s ease;
+}
+
+.venn-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.venn-left {
+    left: 32.5%;
+}
+.venn-right {
+    right: 25%;
+}
+.venn-center {
+    left: 44.25%
+}
+
+.description {
+    background: #bcbcbb;
+    color: #444;
+    width: 45vw;
+    margin: 0 auto;
+    margin-top: 0.125em;
+    padding: 0.33em;
+    padding-top: 0.5em;
+    font-size: calc(6vw + 1em);
+    text-align: left;
+    font-weight: normal;
+}
+
+#desc-title {
+    margin: 0 0 0.75em 0;
+}
+
+.desc-center {
+    clip-path:polygon(
+        0vw 0.2em, 47% 0.2em, 50% 0vw, 53% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+    -webkit-clip-path:polygon(
+        0vw 0.2em, 47% 0.2em, 50% 0vw, 53% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+}   
+
+.desc-left {
+    clip-path:polygon(
+        0vw 0.2em, 22.5% 0.2em, 25% 0vw, 27.5% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+    -webkit-clip-path:polygon(
+        0vw 0.2em, 22.5% 0.2em, 25% 0vw, 27.5% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+    
+}   
+
+.desc-right {
+    clip-path:polygon(
+        0vw 0.2em, 72.5% 0.2em, 75% 0vw, 77.5% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+    -webkit-clip-path:polygon(
+        0vw 0.2em, 72.5% 0.2em, 75% 0vw, 77.5% 0.2em, 100% 0.2em,
+        100% 100%, 0% 100% );
+}   
+
+#portfolio {
+    background-image: url("./images/portfolio.png");
+}
+#planner {
+    background-image: url("./images/plnnr.png");
+}
+#aco {
+    background-image: url("./images/aco.PNG");
+}
+
+.focused {
+    opacity: 1;
+}
+.focused:hover {
+    opacity: 1;
+}
+
+.faded {
+    opacity: 0.1;
+}
+
+.sublabel p a {
+    color: #444;
+}
+
+
+
+
+
+
+

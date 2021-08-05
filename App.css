@@ -1,0 +1,338 @@
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  color: #444;
+  background: none;
+  text-align: center;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url('./images/space.PNG') ;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.menuBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#name {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: calc(16px + 1vw);
+  text-shadow: none;
+  text-decoration: none;
+  margin-left: 4vw;
+  transition: all 0.5s;
+  color: rgba(154, 240, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#name:hover {
+  cursor: pointer;
+}
+
+.subLinks {
+  margin-right: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.menuLink {
+  display: inline-block;
+  padding: 0;
+  text-shadow: none;
+  text-decoration: none;
+  margin-left: 2vw;
+  transition: all 0.5s;
+  color: rgba(245, 245, 245, 0.5)
+}
+
+.menuLink:hover {
+  color: rgba(154, 240, 246, 0.5);
+  cursor: pointer;
+}
+
+.menuLink::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 0.125em;
+  transition: 1s;
+  background: rgba(245, 245, 245, 0.5);
+}
+
+.selected {
+  color: rgba(154, 240, 246);
+}
+
+.selected::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.125em;
+  transition: 1s;
+  background: rgba(154, 240, 246);
+}
+
+main {
+  height: 90vh;
+  padding-top: 10vh;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 0.8em;
+  display: block;
+  background: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.buttonArrow {
+  font-size: 1em;
+}
+
+.toWork {
+  font-family: 'Orbitron', sans-serif;
+  color: whitesmoke;
+  opacity: 0.75;
+  font-size: 16px;
+  position: absolute;
+  top: 75vh;
+  width: 13em;
+  left: calc(50vw - 6.5em);
+  z-index: 2;
+  text-decoration: none;
+}
+
+.toWork:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.regButton {
+  background:none;
+  text-align: center;
+  color: rgba(245,245,245,0.75);
+  font-size: 0.8em;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 3em;
+  display: inline-block;
+}
+
+.regButton:hover {
+  color: rgba(245,245,245,1);
+  cursor: pointer;
+}
+
+#toTop {
+  background: none;
+}
+
+.info-padding {
+  margin: 0 auto;
+  padding-top: 3em;
+  width: 57.5vw;
+  height: 3vw;
+  color: none;
+}
+
+.bsBorder {
+  position: fixed;
+  width: 86vw;
+  height: 86vh;
+  background: rgba(154, 240, 246);
+  opacity: 0.5;
+  top: 12vh;
+  left: 7vw;
+  z-index: -5;
+  clip-path: polygon(
+      0 5%, 2.5% 2.5%, 20% 2.5%, 22.5% 0, 77.5% 0, 80% 2.5%, 97.5% 2.5%, 100% 5%,
+      100% 95%, 97.5% 97.5%, 80% 97.5%, 77.5% 100%, 22.5% 100%, 20% 97.5%, 2.5% 97.5%, 0 95%
+  );
+  transition: all 0.5s linear;
+}
+
+.backScreen {
+  position: fixed;
+  width: 85vw;
+  height: 85vh;
+  background-image: url('./images/space.PNG') ;
+  top: 12.5vh;
+  left: 7.5vw;
+  z-index: -4;
+  clip-path: polygon(
+      0 5%, 2.5% 2.5%, 20% 2.5%, 22.5% 0, 77.5% 0, 80% 2.5%, 97.5% 2.5%, 100% 5%,
+      100% 95%, 97.5% 97.5%, 80% 97.5%, 77.5% 100%, 22.5% 100%, 20% 97.5%, 2.5% 97.5%, 0 95%
+  );
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+#work {
+  border:2px solid rgba(245,245,245,0);
+}
+
+#about {
+  border:2px solid rgba(245,245,245,0);
+}
+
+.starScreen {
+  width: 100vw;
+  height: 90vh;
+  position: fixed;
+  top: 10vh;
+  opacity: 0.24;
+  z-index: -3;
+}
+
+#roid-3, #roid-4, #roid-5 {
+  color:whitesmoke;
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  opacity: 0.75;
+  animation-duration: 7.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 1vw;
+  animation-delay: 1s;
+  z-index: -3;
+}
+
+#roid-3 {
+  animation-delay: 2s;
+  animation-name: roid3;
+}
+
+#roid-4 {
+  animation-delay: 4s;
+  animation-name: roid4;
+}
+
+#roid-5 {
+  animation-delay: -1.5s;
+  animation-name: roid5;
+}
+
+
+@keyframes roid3 {
+  from, to { transform: translate(-25vw, -10vh); }
+  25% { transform: translate(-91.5vw, 120vh); opacity: 0.75; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+@keyframes roid4 {
+  from, to { transform: translate(30vw, -10vh); }
+  25% { transform: translate(-36.5vw, 120vh); opacity: 0.75; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+@keyframes roid5 {
+  from, to { transform: translate(-60vw, -10vh); }
+  25% { transform: translate(-126.5vw, 120vh); opacity: 0.75; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+#projects, #profile, #home {
+  background: none;
+}
+
+/** Mobile Rendering **/
+
+#roid-3S, #roid-4S, #roid-5S {
+  color:white;
+  position: absolute;
+  top: 40vh;
+  right: 0;
+  opacity: 1;
+  animation-duration: 7.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 4px;
+  animation-delay: 1s;
+  z-index: -3;
+}
+
+#roid-3S {
+  animation-delay: 2s;
+  animation-name: roid3S;
+}
+
+#roid-4S {
+  animation-delay: 4s;
+  animation-name: roid4S;
+}
+
+#roid-5S {
+  animation-delay: -1.5s;
+  animation-name: roid5S;
+}
+
+
+@keyframes roid3S {
+  from, to { transform: translate(-25vw, -20vh); }
+  25% { transform: translate(-101.5vw, 40vh); opacity: 1; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+@keyframes roid4S {
+  from, to { transform: translate(10vw, -10vh); }
+  25% { transform: translate(-46.5vw, 60vh); opacity: 1; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+@keyframes roid5S {
+  from, to { transform: translate(-60vw, -45vh); }
+  25% { transform: translate(-136.5vw, 55vh); opacity: 1; }
+  25.5% { opacity: 0 }
+  100% {opacity: 0}
+}
+
+.toWorkS {
+  font-size: 2.5vw;
+  opacity: 1;
+}

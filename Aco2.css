@@ -1,0 +1,153 @@
+.acoWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.Aco2 {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+    font-size: 16px;
+    z-index: 10
+}
+
+.controls h6 {
+    font-size: 16px;
+    margin: 16px 0 0 16px;
+}
+
+.controls p {
+    text-align: left;
+    margin: 1.75vw 0 0 4vw;
+}
+
+.cities {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 0.75vw 0 0 4vw;
+    height: 45%;
+}
+
+.controlColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.controlColumn label {
+    margin: 0 0.25vw 0 0.5vw;
+}
+
+.controlColumn input {
+    width: 1.5vw;
+    font-size: 0.85vw;
+    font-family: 'JetBrains Mono', monospace;
+    color: whitesmoke;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+#iteratives {
+    margin: 2vw 0 0 4vw;
+    display: flex;
+    height: 12%;
+    
+}
+
+#iteratives .controlColumn {
+    margin-right: 0.25vw;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons button {
+    font-family: 'Orbitron', sans-serif;  
+    font-size: 1vw;
+    text-shadow: 1px 1px 8px rgba(165,217,213);
+    padding: 0.5vw 0.25vw 0.5vw 0.25vw ;
+    margin: 0 auto;
+    color: whitesmoke;
+    margin-top: 1.5vw;
+    margin-left: 4vw;
+    border: 2px solid rgba(245,245,245,0.05);
+    transition: all 0.75s;
+    width: 4.5vw;
+}
+
+#buttons #reset {
+    margin-left: 0vw;
+}
+
+#buttons button:hover {
+    box-shadow: 0 0 0.33vw  rgba(154, 240, 246, 0.931);
+}
+
+
+.map {
+    margin-top: 1em;
+    background: rgba(154, 240, 246, 0.0625);
+    box-shadow: 0 0 0.33vw  rgba(154, 240, 246, 0.931);
+    width: 28vw;
+    height: 28vw;
+}
+
+.description h6 {
+    margin: 1vw 1.5vw 0 0;
+}
+
+.descText {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2vw;
+    font-size: 0.85vw;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+}
+
+/** Mobile Rendering **/
+
+.Aco2S {
+    height: 150%
+}
+
+.mapS {
+    width: 50vw;
+    height: 50vw;
+}
+
+.controlsS button {
+    font-family: 'Orbitron', sans-serif;  
+    font-size: 16px;
+    text-shadow: 1px 1px 8px rgba(165,217,213);
+    padding: 0.5vw 0.25vw 0.5vw 0.25vw ;
+    margin: 0 auto;
+    color: whitesmoke;
+    margin-top: 1.5vw;
+    margin-left: 4vw;
+    border: 2px solid rgba(245,245,245,0.05);
+    transition: all 0.75s;
+    width: 68px
+}
+
+#hidden {
+    position: absolute;
+    left: -200vw
+}
+
+.acoDescriptionS {
+    font-size: 12px;
+    padding: 0 12px 12px 12px
+}

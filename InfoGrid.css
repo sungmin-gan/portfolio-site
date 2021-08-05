@@ -1,0 +1,321 @@
+.grid-area {
+    width: 49.5vw;
+    height: 37vw;
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw 12vw;
+    grid-template-rows: 12vw 12vw 12vw;
+    text-align: center;
+    margin: 0 auto;
+    column-gap: 0.5vw;
+    row-gap: 0.5vw;
+    margin-bottom: 10em;
+    background:rgb(33,39,51);
+    border: 0.5vw solid rgb(33,39,51);
+    font-size: 0.66em;
+}
+
+/* General */
+
+
+.label {
+    font-size: 0.17em;
+    margin-top: 0.5em;
+}
+.sublabel {
+    font-size: 0.14em;
+    margin-top: 0.5em;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Toolkit Section */
+
+.toolkit-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background: #444;
+    color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.toolkit-icon {
+    margin-top: 1vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toolkit-icon i {
+    font-size: 0.75em;
+}
+
+/* Education Section */
+
+.education-text {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #444;
+    color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 0.5em;
+}
+
+.education-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-icon i {
+    font-size: 0.4em;
+}
+
+/* Philosophy Section */
+
+.philosophy-text {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 2 / span 2;
+    display: flex;
+    padding: 0.2em;
+    background: #444;
+    color:whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+#p1, #p2 {
+    text-align: left;
+}
+
+.philosophy-text i {
+    font-size: 0.4em;
+}
+
+/* Internship Section */
+
+.internship-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 0.2em;
+    background: #444;
+    color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.job-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 4em;
+    margin-right: 0.2em;
+}
+
+.jobLogo {
+    margin: 0 auto;
+    width: 0.4em;
+    padding-top: 0.2em;
+}
+
+.job-text {
+    text-align: left;
+}
+
+/* Teaching Section */
+
+.teaching-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    padding: 0.2em;
+    background: #444;
+    color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* Contact Section */
+
+.contact-text {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-content: center;
+    padding: 0.4em 0.2em 0.4em 0.2em ;
+    background: #444;
+    color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 8.5em;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.contact-column .sublabel {
+    margin-left: 0.8em;
+}
+
+.contact-icons i {
+    font-size: 0.2em;
+    margin-top: 0.2em;
+}
+#email, #linkedin, #github {
+    font-size: 0.2em;
+}
+
+.contactLink {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.contact-column div .contactLink {
+    cursor: pointer;
+}
+
+/* Covers */
+
+.cover {
+    font-size: calc(1.25vw + .75em);
+    z-index: 5;
+    width: 100%;
+}
+
+.toolkit {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.education {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.philosophy {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 2 / span 2;
+    justify-content: start;
+}
+.internship {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.teaching {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.contact {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+/*Colored Sliders*/
+
+.cover:before {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toolkit:before {
+    background: rgb(113,97,239);
+    color: whitesmoke;
+    content: "my toolkit";
+    transition: width, 0.75s ease;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+} .education:before {
+    background: rgb(255,133,26);
+    color:whitesmoke;
+    content: "education";
+    transition: height, 0.75s ease-out;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+} .philosophy:before {
+    background: rgb(76,76,76);
+    color: whitesmoke;
+    content: "philosophy";
+    transition: height, 0.75s ease-out;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}.internship:before {
+    background:rgb(177,47,84);
+    color:whitesmoke;
+    content: "internship experience";
+    transition: width, 0.75s ease;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+}.teaching:before {
+    background:  rgba(255,173,51);
+    color: #222;
+    content: "teaching experience";
+    transition: width, 0.75s ease;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+}.contact:before {
+    background: rgb(162,239,118);
+    color: #222;
+    content: "contact";
+    transition: width, 0.75s ease-out;
+    font-size: 0.9em;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* 'Reveal' Animation */
+
+.toolkit:hover:before, 
+.internship:hover:before,
+.teaching:hover:before,
+.contact:hover:before
+{ width: 0; opacity: 0;} 
+
+.education:hover:before, 
+.philosophy:hover:before
+{ transform: rotateY(180deg);}
+
+/*
+ rgba(31,32,65);
+ rgba(148,41,17);
+ rgba(238,180,179);
+ rgba(86,110,61);
+ rgba(255,200,87);
+ rgba(161,134,158);
+*/
