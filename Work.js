@@ -16,7 +16,7 @@ class Work extends Component {
     }
 
     state = {
-        currentSlide: 0,
+        currentSlide: 1,
         portPos: 0,
         plnPos: 1,
         antPos: 2,
